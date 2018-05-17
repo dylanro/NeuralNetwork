@@ -5,7 +5,7 @@ class NeuralNet {
         this.outputLayer = [];
 
         for(let i = 0; i < num_of_inputs; i++) {
-            this.inputLayer[i] = new Neuron();
+            this.inputLayer[i] = new Neuron(0);
         }
 
         for(let i = 0; i < num_of_hidden; i++) {
@@ -39,8 +39,8 @@ class NeuralNet {
             this.outputLayer[i].train();
         }
 
-        this.hiddenLayer.forEach(function(this){
-            this.train();
-        });
+        for(let i = 0; i < this.hiddenLayer.length; i++) {
+            this.hiddenLayer[i].train();
+        }
     }
 }
