@@ -34,8 +34,8 @@ function mouseClicked() {
 
 function displayData() {
     let count = 0;
-    for(let i = 0 + 560/29; i < 560; i+=560/29){
-        for(let j = 0 + 560/29; j < 560; j+=560/29){
+    for (let i = 0 + 560 / 29; i < 560; i += 560 / 29) {
+        for (let j = 0 + 560 / 29; j < 560; j += 560 / 29) {
             noStroke();
             //fill(int(sampleSplit[count]));
             fill(int(sampleSplit2[count]));
